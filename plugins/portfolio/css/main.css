@@ -184,7 +184,7 @@ header hr {
 }
 
 .contact-nav ul li i {
-  color: #0d68ab;
+  color: #00f1ff;
 }
 
 .search-box {
@@ -277,14 +277,72 @@ header hr {
   background-color: transparent;
 }
 
+.navbar-default .navbar-nav>li>a::before,
+.navbar-default .navbar-nav>li>a::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  opacity: 0;
+  border: 2px solid #00f1ff;
+  -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.17, 0.67, 0.05, 1.29);
+  transition-timing-function: cubic-bezier(0.17, 0.67, 0.05, 1.29);
+}
+
+.navbar-default .navbar-nav>li>a::before {
+  top: 0;
+  left: 0;
+  border-width: 2px 0 0 2px;
+  -webkit-transform: translate3d(13px, 19px, 0);
+  transform: translate3d(13px, 19px, 0);
+}
+
+.navbar-default .navbar-nav>li>a::after {
+  right: 0;
+  bottom: 0;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: translate3d(-13px, -17px, 0);
+  transform: translate3d(-13px, -17px, 0);
+}
+
 .navbar-default .navbar-nav>li>a {
   color: #fff;
   font-family: 'yekan';
   transition: .5s;
+  font-size: 18px;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-  color: #6f8ea5;
+  color: #00f1ff;
+}
+
+.navbar-default .navbar-nav>li {
+  margin-right: 20px;
+  position: relative;
+}
+
+.navbar-default .navbar-nav>li:first-child {
+  margin-right: 0
+}
+
+.navbar-default .navbar-nav>li>a:hover::before {
+  opacity: 1;
+  -webkit-transform: translate3d(4px, 12px, 0);
+  transform: translate3d(4px, 12px, 0);
+}
+
+.navbar-default .navbar-nav>li>a:hover::after {
+  opacity: 1;
+  -webkit-transform: translate3d(-6px, -8px, 0);
+  transform: translate3d(-6px, -8px, 0);
+}
+
+.navbar-default .navbar-nav>li:first-child>a:hover::before {
+  opacity: 1;
+  -webkit-transform: translate3d(6px, 8px, 0);
+  transform: translate3d(6px, 8px, 0);
 }
 
 .navbar-collapse {
@@ -367,7 +425,45 @@ ul li i.fa-instagram {
 ul li i.fa-telegram {
   color: #4883ce;
 }
-/*
+
+.closebtn {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+  padding-bottom: 5px;
+  width: 35px;
+  border-radius: 50px;
+  background-color: #a4978e;
+  color: #fff;
+}
+
+.sidebar-btn {
+  position: relative;
+}
+
+.sidebar-btn .title {
+  font-family: 'yekan';
+  color: #fff;
+  margin: 0;
+}
+
+.sidebar-btn button {
+  position: absolute;
+  left: 10px;
+  bottom: -16px;
+  border: none;
+  font-size: 35px;
+  padding: 10px 15px;
+  background-color: transparent;
+  color: #fff;
+}
+
+.sidebar-btn button:focus {
+  border: none;
+}
 
 #cssmenu {
   width: 0;
@@ -433,7 +529,7 @@ ul li i.fa-telegram {
   padding: 15px 10px;
   border: none;
   text-align: center;
-  font: 300 18px "Ubuntu", sans-serif;
+  font: 300 25px "Ubuntu", sans-serif;
   text-shadow: 0 -1px 1px #000000;
   width: 187px;
   margin-left: auto;
@@ -441,6 +537,7 @@ ul li i.fa-telegram {
 
 #cssmenu > ul > li:first-child > a > span {
   padding: 0;
+  margin-right: 15px;
 }
 
 #cssmenu > ul > li.opened {
@@ -491,8 +588,17 @@ ul li i.fa-telegram {
   bottom: 11px;
 }
 
+#cssmenu > ul > li.last > a > span {
+  font-size: 18px;
+  text-align: center;
+}
+
+#cssmenu > ul > li.last > a {
+  padding: 10px;
+}
+
 #cssmenu > ul > li:first-child {
-  background: #2d2c2f;
+  background: transparent;
 }
 
 #cssmenu > ul > li:first-child:hover {
@@ -507,12 +613,8 @@ ul li i.fa-telegram {
   color: #e94f31;
 }
 
-#cssmenu ul ul a:hover {
-  color: #e94f31;
-}
-
 #cssmenu {
-  background-color: #2d2c2f;
+  background: linear-gradient(to bottom right, rgb(10, 22, 25), rgb(42, 82, 93));
 }
 
 #cssmenu > ul > li:first-child:hover {
@@ -520,11 +622,7 @@ ul li i.fa-telegram {
 }
 
 #cssmenu > ul > li {
-  background: #1f1f21;
-}
-
-#cssmenu > ul > li:hover {
-  background: #e84323;
+  background: #132226;
 }
 
 #cssmenu > ul > li > a {
@@ -547,11 +645,28 @@ ul li i.fa-telegram {
   color: #e94f31;
 }
 
-#cssmenu ul ul a:hover {
-  color: #ffffff;
+#cssmenu > ul > li:nth-child(2) {
+  background: transparent;
+  margin-bottom: 20px;
 }
 
-*/
+#cssmenu #searchWindow {
+  border: none;
+  border-radius: 0;
+  font-family: 'yekan';
+  padding: 25px;
+}
+
+#cssmenu .look-for {
+  font-family: 'yekan';
+  padding: 5px;
+  font-size: 15px;
+  height: 50px;
+  border: none;
+  background-color: #a4978e;
+  color: #fff;
+}
+
 
 /*================================
 
@@ -863,7 +978,19 @@ footer h4 {
   #cssmenu .search-box h4 {
     display: none;
   }
-  .banner {
+}
+
+@media(min-width: 768px) and (max-width: 992px) {
+  .banner-content .title h1.heading-style-1 {
+    font-size: 30px;
+  }
+  .social-media-footer {
+    margin-top: 35px;
+  }
+}
+
+@media(min-width: 768px) {
+  .sidebar-btn {
     display: none;
   }
 }

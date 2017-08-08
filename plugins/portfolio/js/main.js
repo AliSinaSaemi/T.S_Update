@@ -14,3 +14,13 @@ $(document).ready(function () {
     $('.social-media-sidenav').removeClass('closed_social_media');
   });
 });
+
+function openNav() {
+  document.getElementById("cssmenu").style.width = "100%";
+  document.getElementById("cssmenu").style.opacity = "1";
+}
+
+function closeNav() {
+  document.getElementById("cssmenu").style.width = "0";
+  document.getElementById("cssmenu").style.opacity = "0";
+}

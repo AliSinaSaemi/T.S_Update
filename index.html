@@ -37,7 +37,7 @@
 
 <body>
   <header>
-    <div class="container-fluid">
+    <div class="container-fluid hidden-xs">
       <div class="row">
         <div class="contact-nav hidden-xs">
           <ul class="list-unstyled list-inline">
@@ -68,6 +68,28 @@
         </nav>
       </div>
     </div>
+    <div class="sidebar-btn container-fluid">
+      <h1 class="title">طیبه شادالو</h1>
+      <button class="openbtn btn-form" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></button>
+    </div>
+    <div id='cssmenu'>
+      <ul>
+        <li>
+          <a href='#'><span class="text-right samim">طیبه شادالو</span></a>
+          <button href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-times" aria-hidden="true"></i></button>
+        </li>
+        <li>
+          <div class="search-bos-sidebar container-fluid">
+            <div class="row">
+              <input type="text" class="form-control col-xs-9" id="searchWindow" placeholder="جستجو کنید ...">
+              <button class="btn-form look-for col-xs-3"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+          </div>
+        </li>
+        <li class='last'><a href='#'><span class="text-right">گالری ها</span></a></li>
+        <li class='last'><a href='#'><span class="text-right">درباره ما</span></a></li>
+      </ul>
+    </div>
     <div class="hvr-backward open_social_media hidden-xs hidden-sm">
       <i class="fa fa-angle-double-left" aria-hidden="true"></i>
     </div>
@@ -81,7 +103,7 @@
     </div>
   </header>
 
-  <section class="banner hidden-xs">
+  <section class="banner">
     <div id="particles-js">
       <canvas class="particles-js-canvas-el" width="1423" height="710" style="width: 100%; height: 100%;"></canvas>
     </div>
@@ -91,7 +113,7 @@
       </div>
     </div>
   </section>
-
+  
   <section class="rotating-slider hidden-xs">
     <div class="rm_wrapper">
       <div id="rm_container" class="rm_container">
@@ -146,7 +168,7 @@
         <h2 class="text-center heading-style-1 article-title">گالری ها</h2>
         <hr class="sub-underline-title">
       </div>
-      <div class="col-xs-12 col-md-4">
+      <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="thumbnail">
           <a href="#">
             <img class="img-responsive" src="gallary/main/img/tazhib(2).jpg" alt="Lights">
@@ -157,7 +179,7 @@
           </a>
         </div>
       </div>
-      <div class="col-xs-12 col-md-4">
+      <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="thumbnail">
           <a href="#">
             <img class="img-responsive" src="gallary/main/img/tazhib(1).jpg" alt="Nature">
@@ -168,7 +190,8 @@
           </a>
         </div>
       </div>
-      <div class="col-xs-12 col-md-4">
+      <div class="col-sm-3 visible-sm"></div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="thumbnail">
           <a href="#">
             <img class="img-responsive" src="gallary/main/img/tazhib(3).jpg" alt="Fjords">
@@ -188,10 +211,10 @@
   <footer>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-4 text-center details-footer hidden-xs">
+        <div class="col-sm-8 col-md-4 text-center details-footer hidden-xs">
           <p>طراحان معمولاً برای طراحی، ابتدا از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا صرفاً به مشتری یا صاحب کار خود نشان دهند که صفحه طراحی یا صفحه بندی شده بعد از اینکه متن در آن قرار گیرد چگونه به نظر می‌رسد و قلم‌ها و اندازه‌بندی‌ها چگونه</p>
         </div>
-        <div class="col-md-4 text-center pages-map hidden-xs">
+        <div class="col-sm-4 col-md-4 text-center pages-map hidden-xs">
           <h4>صفحه ها</h4>
           <ul class="list-unstyled">
             <li><a href="#">خانه</a></li>
@@ -199,7 +222,7 @@
             <li><a href="#">درباره ما</a></li>
           </ul>
         </div>
-        <div class="col-xs-12 col-md-4 text-center social-media-footer">
+        <div class="col-sm-12 col-xs-12 col-md-4 text-center social-media-footer">
           <h4>مارا دنبال کنید</h4>
           <ul class="list-unstyled list-inline">
             <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
@@ -207,7 +230,7 @@
             <li><a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
           </ul>
         </div>
-        <div class="col-xs-12 col-md-12">
+        <div class="col-xs-12 col-sm-12 col-md-12">
           <div class="col-xs-12 col-md-4"></div>
           <div class="col-xs-12 col-md-4">
             <div class="copyright text-center">
