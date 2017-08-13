@@ -117,17 +117,17 @@
   <section class="rotating-slider hidden-xs">
     <div class="rm_wrapper">
       <div id="rm_container" class="rm_container">
-        <ul>
-          <li data-images="rm_container_1" data-rotation="-15" data-transform="rotate(-15deg)" style="transform: rotate(-15deg);"><img src="plugins/rotating-slider/imgs/6.jpg" data-transform="rotate(0deg) origin(155px, 930px)" style="transform: rotate(0deg); transform-origin: 155px 930px 0px;"></li>
-          <li data-images="rm_container_2" data-rotation="-5" data-transform="rotate(-5deg)" style="transform: rotate(-5deg);"><img src="plugins/rotating-slider/imgs/9.jpg" data-transform="rotate(0deg) origin(155px, 930px)" style="transform: rotate(0deg); transform-origin: 155px 930px 0px;"></li>
-          <li data-images="rm_container_3" data-rotation="5" data-transform="rotate(5deg)" style="transform: rotate(5deg);"><img src="plugins/rotating-slider/imgs/12.jpg" data-transform="rotate(0deg) origin(155px, 930px)" style="transform: rotate(0deg); transform-origin: 155px 930px 0px;"></li>
-          <li data-images="rm_container_4" data-rotation="15" data-transform="rotate(15deg)" style="transform: rotate(15deg);"><img src="plugins/rotating-slider/imgs/15.jpg" data-transform="rotate(0deg) origin(155px, 930px)" style="transform: rotate(0deg); transform-origin: 155px 930px 0px;"></li>
+        <ul class="rotating-slider-list">
+          <li class="rotating-slider-1" data-images="rm_container_1" data-rotation="-15" data-transform="rotate(-15deg)" style="transform: rotate(-15deg);"><img src="plugins/rotating-slider/imgs/6.jpg" data-transform="rotate(0deg) origin(155px, 930px)" style="transform: rotate(0deg); transform-origin: 155px 930px 0px;"></li>
+          <li class="rotating-slider-2" data-images="rm_container_2" data-rotation="-5" data-transform="rotate(-5deg)" style="transform: rotate(-5deg);"><img src="plugins/rotating-slider/imgs/9.jpg" data-transform="rotate(0deg) origin(155px, 930px)" style="transform: rotate(0deg); transform-origin: 155px 930px 0px;"></li>
+          <li class="rotating-slider-3" data-images="rm_container_3" data-rotation="5" data-transform="rotate(5deg)" style="transform: rotate(5deg);"><img src="plugins/rotating-slider/imgs/12.jpg" data-transform="rotate(0deg) origin(155px, 930px)" style="transform: rotate(0deg); transform-origin: 155px 930px 0px;"></li>
+          <li class="rotating-slider-4" data-images="rm_container_4" data-rotation="15" data-transform="rotate(15deg)" style="transform: rotate(15deg);"><img src="plugins/rotating-slider/imgs/15.jpg" data-transform="rotate(0deg) origin(155px, 930px)" style="transform: rotate(0deg); transform-origin: 155px 930px 0px;"></li>
         </ul>
         <div id="rm_mask_left" class="rm_mask_left"></div>
         <div id="rm_mask_right" class="rm_mask_right"></div>
         <div id="rm_corner_left" class="rm_corner_left"></div>
         <div id="rm_corner_right" class="rm_corner_right"></div>
-        <h2>با ما محصر به فرد میشوید</h2>
+        <h2 class="rotating-slider-text">با ما محصر به فرد میشوید</h2>
         <div style="display:none;">
           <div id="rm_container_1">
             <img src="plugins/rotating-slider/imgs/1.jpg">
@@ -168,7 +168,7 @@
         <h2 class="text-center heading-style-1 article-title">گالری ها</h2>
         <hr class="sub-underline-title">
       </div>
-      <div class="col-sm-6 col-md-4">
+      <div class="col-sm-6 col-md-4 gallary-right">
         <div class="thumbnail">
           <div class="caption">
             <h4>مدرن</h4>
@@ -179,7 +179,7 @@
           <img src="gallary/main/img/tazhib(1).jpg" alt="...">
         </div>
       </div>
-      <div class="col-sm-6 col-md-4">
+      <div class="col-sm-6 col-md-4 gallary-center">
         <div class="thumbnail">
           <div class="caption">
             <h4>نقاشی</h4>
@@ -191,7 +191,7 @@
         </div>
       </div>
       <div class="col-sm-3"></div>
-      <div class="col-sm-6 col-md-4">
+      <div class="col-sm-6 col-md-4 gallary-left">
         <div class="thumbnail">
           <div class="caption">
             <h4>طراحی</h4>
@@ -203,7 +203,7 @@
         </div>
       </div>
       <div class="col-sm-3"></div>
-      <div class="col-md-12 text-center">
+      <div class="col-md-12 text-center gallary-continue">
         <a class="btn btn-default btn-gallary-main" href="#">مشاهده گالری</a>
       </div>
     </div>
@@ -212,10 +212,10 @@
   <footer>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-8 col-md-4 text-center details-footer hidden-xs">
+        <div class="col-sm-8 col-md-4 text-center details-footer hidden-xs footer-content-1">
           <p>طراحان معمولاً برای طراحی، ابتدا از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا صرفاً به مشتری یا صاحب کار خود نشان دهند که صفحه طراحی یا صفحه بندی شده بعد از اینکه متن در آن قرار گیرد چگونه به نظر می‌رسد و قلم‌ها و اندازه‌بندی‌ها چگونه</p>
         </div>
-        <div class="col-sm-4 col-md-4 text-center pages-map hidden-xs">
+        <div class="col-sm-4 col-md-4 text-center pages-map hidden-xs footer-content-2">
           <h4>صفحه ها</h4>
           <ul class="list-unstyled">
             <li><a href="#">خانه</a></li>
@@ -223,7 +223,7 @@
             <li><a href="#">درباره ما</a></li>
           </ul>
         </div>
-        <div class="col-sm-12 col-xs-12 col-md-4 text-center social-media-footer">
+        <div class="col-sm-12 col-xs-12 col-md-4 text-center social-media-footer footer-content-3">
           <h4>مارا دنبال کنید</h4>
           <ul class="list-unstyled list-inline">
             <li><a class="hvr-grow" href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
@@ -231,7 +231,7 @@
             <li><a class="hvr-grow" href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
           </ul>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="col-xs-12 col-sm-12 col-md-12 footer-content-4">
           <div class="col-xs-12 col-md-4"></div>
           <div class="col-xs-12 col-md-4">
             <div class="copyright text-center">
@@ -249,6 +249,10 @@
   <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
   <!-- Sticky -->
   <script src="plugins/sticky/js/jquery.sticky.js"></script>
+
+  <!-- Reveal js -->
+  <script src="plugins/reveal-js/js/scrollreveal.min.js"></script>
+
   <!-- Particles js -->
   <script src="plugins/particals-js/js/particles.js"></script>
   <script src="plugins/particals-js/js/app.js"></script>
